@@ -1,15 +1,28 @@
+# Laravel
+/vendor
 /node_modules
-/public/hot
 /public/storage
 /storage/*.key
-/vendor
+/storage/logs
 .env
-.env.*
+.env.local
+.env.development
+.env.testing
+.env.production
 .phpunit.result.cache
+
+# Frontend (Vite or Webpack)
+npm-debug.log
+yarn-error.log
+
+# IDE/Editor files
+/.idea
+/.vscode
+
+# Docker / Homestead
 docker-compose.override.yml
 Homestead.json
 Homestead.yaml
-npm-debug.log
-yarn-error.log
-/.idea
-/.vscode
+
+# Hot reload (Vite/Laravel Mix)
+public/hot
