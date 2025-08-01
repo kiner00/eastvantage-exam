@@ -17,6 +17,11 @@ A simple full-stack application using **React 17 (TypeScript)** and **Laravel 8 
   - Email (required, unique, valid format)
   - Full Name (required)
   - Roles (required, array)
+- ✅ Test-Driven Development (TDD) using Laravel test suite
+
+  ```bash
+  php artisan test
+  ```
 
 ### React (Frontend)
 
@@ -27,6 +32,7 @@ A simple full-stack application using **React 17 (TypeScript)** and **Laravel 8 
   - **User List**: Displays all users grouped by roles
   - **Add User**: Form to create user with multiple role selection
 - Uses `react-router-dom@5` for routing
+- Functional components with hooks
 
 ---
 
@@ -45,7 +51,7 @@ A simple full-stack application using **React 17 (TypeScript)** and **Laravel 8 
 
 3. Configure `.env` to match your database:
 
-   ```
+   ```env
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
@@ -66,6 +72,12 @@ A simple full-stack application using **React 17 (TypeScript)** and **Laravel 8 
    php artisan serve
    ```
 
+6. (Optional) Run test suite:
+
+   ```bash
+   php artisan test
+   ```
+
 ### Frontend (React)
 
 1. Go to the frontend folder:
@@ -82,7 +94,7 @@ A simple full-stack application using **React 17 (TypeScript)** and **Laravel 8 
 
 3. Create `.env` file:
 
-   ```
+   ```env
    VITE_API_BASE_URL=http://localhost:8000/api
    ```
 
@@ -115,6 +127,7 @@ src/
 - [x] TypeScript support
 - [x] Axios integration
 - [x] Laravel API with validation and seeding
+- [x] Laravel test coverage with `php artisan test`
 
 ---
 
